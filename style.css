@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+}
+
+:root {
+    margin: 0;
+    padding: 0;
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+    display: flex;
+}
+
+.sidebar-container {
+    /* background-color: green; */
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-container{
+    width: 80vw;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* position: relative; */
+
+}
+
+.card {
+    margin-top: 40px;
+    background-color: var(--bg-cards);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+}
+
+.sidebar-card {
+    margin-left: 40px;
+}
+
+.main-container-card{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.card-title{
+    margin: 5% 7%;
+    font-size: 20px;
+}
+
+.profile {
+    /* position: relative;
+    top: 3%;
+    left: 3%; */
+    width: 348px;
+    height: 292px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-pic{
+    margin-top: 32px;
+    background-image: url("./assets/SelfieLucas.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    border: solid #00FF00 2px;
+    width: 128px;
+    height: 128px;
+}
+
+.name {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 23px;
+    width: 280px;
+    height: 26px;
+}
+
+.profession{
+    margin-top: 10px;
+    width: 150px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 16px;
+}
+
+.info {
+    width: 348px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-list {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.info-list-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.info-list-item a div{
+    margin-left: 20px;;
+}
+
+.techs{
+    width: 348px;
+    height: 208px;
+}
+
+.techs h1 {
+    margin: 5% 7%;
+    font-size: 20px;
+
+}
+
+.tech-card{
+    width: 86px;
+    height: 24px;
+    background-color: var(--bg-techs);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.grid-techs-card{
+    /* width: 80%; */
+    height: 120px;
+    /* margin: 5% 7%; */
+    display: grid;
+    grid-template-columns: 86px 86px 86px;
+    grid-auto-rows: 24px;
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.experiences{
+    width: 348px;
+    height: 349px;
+}
+
+.experiences .card-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.topic-list{
+    margin-left: 20px;
+    width: 80%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.topic-list-item > *{
+    /* margin-top: 20px; */
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 3px;
+}
+
+.topic-list-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.education{
+    width: 348px;
+    height: 349px;
+    margin-bottom: 50px;
+}
+
+.my-projects {
+    width: 93%;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-projects h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 121px;
+    height: 26px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.my-projects h3 {
+    margin-top: 34px;
+    margin-right: 30px;
+    margin-bottom: 34px;
+    width: 71px;
+    height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.project-posts{
+    width: 93%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.project-posts > * {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.project {
+    width: 685px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project * {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.project > * {
+    position: static;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.project .top-section{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.project .top-section h2 {
+    margin-left: 16px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.project .middle-section {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.project .botton-section{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.project .botton-section .left {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .botton-section .left > * {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.project .botton-section .right {
+    margin-right: 30px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recent-posts {
+    width: 93%;
+    height: 86px;
+    display: flex;
+}
+
+.recent-posts h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 26px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.post {
+    width: 93%;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.post-img-section{
+    /* background-color: red; */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-img {
+    background-image: url("./assets/SelfieLucas.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 50%;
+    /* border: solid #00FF00 2px; */
+    /* background-color: red; */
+    width: 128px;
+    height: 128px;
+}
+
+.post-body {
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.post-body > * {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* margin-top: 30px; */
+    margin-left: 30px;
+}
+
+.post-body h2 {
+    margin-top: 30px;
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.post-body h3 {
+    margin-top: 10px;
+}
+
+.post-body p {
+    margin-top: 30px;
+}
+
+.hashtag-list {
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+
